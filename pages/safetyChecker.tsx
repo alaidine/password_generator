@@ -1,12 +1,13 @@
-import { Button, Typography } from "@mui/material";
+import HomeButton from "@/components/HomeButton";
+import { Container, Typography } from "@mui/material";
 
 export default function safetyChecker() {
   return (
     <>
-      <Button onClick={() => (window.location.href = "/")} variant="outlined">
-        Home
-      </Button>
-      <Typography>Safety checker page</Typography>
+      <Container>
+        <HomeButton />
+        <Typography>Safety checker page</Typography>
+      </Container>
     </>
   );
 }
