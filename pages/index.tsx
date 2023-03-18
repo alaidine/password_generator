@@ -1,4 +1,5 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+import PathButton from "@/components/PathButton";
+import { Box, Container, Typography } from "@mui/material";
 
 export default function Home() {
   return (
@@ -17,22 +18,8 @@ export default function Home() {
             width: "300px",
           }}
         >
-          <Button
-            onClick={() => (window.location.href = "/passwordGen")}
-            variant="outlined"
-            sx={{ color: "black" }}
-          >
-            Password generator
-          </Button>
-          <Button
-            onClick={() => {
-              window.location.href = "/safetyChecker";
-            }}
-            variant="outlined"
-            sx={{ color: "black" }}
-          >
-            Safety checker
-          </Button>
+          <PathButton path="/passwordGen" value="Password Generator" />
+          <PathButton path="/safetyChecker" value="Safety Checker" />
         </Box>
       </Container>
     </>
