@@ -1,5 +1,5 @@
 import PathButton from "@/components/PathButton";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 export default function Home() {
   return (
